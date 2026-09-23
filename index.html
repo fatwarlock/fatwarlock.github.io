@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fatih Yıldırım — FatWarlock</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #12141a;
+    --text: #e9eaed;
+    --muted: #9aa0ac;
+    --accent: #ff5a3c;
+    --accent-2: #4fd1c5;
+    --border: #2a2e3a;
+    --serif: "Fraunces", serif;
+    --sans: "Inter", sans-serif;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  a { color: var(--accent-2); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  a:focus-visible { outline: 2px solid var(--accent-2); outline-offset: 3px; }
+
+  .wrap {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0 24px;
+    width: 100%;
+  }
+
+  main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 60px 0;
+  }
+
+  h1 {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: clamp(2rem, 6vw, 2.8rem);
+    line-height: 1.15;
+    margin: 0 0 20px;
+  }
+
+  h1 em {
+    font-style: italic;
+    color: var(--accent);
+  }
+
+  .kick-link {
+    display: inline-block;
+    font-family: var(--sans);
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 0 0 40px;
+    padding: 10px 18px;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+  }
+
+  h2 {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: var(--accent-2);
+    margin: 0 0 12px;
+  }
+
+  section.about p {
+    color: var(--muted);
+    max-width: 60ch;
+    margin: 0 0 14px;
+  }
+
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 20px 0;
+  }
+
+  footer .wrap {
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+
+<main>
+  <div class="wrap">
+    <h1>Fatih Yıldırım —<br>building <em>systems</em>, one race at a time.</h1>
+
+    <a class="kick-link" href="https://kick.com/fatwarlock">Watch on Kick →</a>
+
+    <section class="about">
+      <h2>About</h2>
+      <p>
+        I studied Industrial Engineering, and Computer Programming alongside it — but never got the chance to work
+        on a real project, just coursework. I also ran a real estate agency for a while, which is its own kind of
+        education.
+      </p>
+      <p>
+        Now I'm doing an MSc in Computer Science at TU Dublin to actually close that gap and become someone who's
+        built things, not just studied how to. Outside of that, I'm mostly playing FPS games and streaming it —
+        Kick link above if you're curious what that looks like.
+      </p>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">Site under construction — more coming soon.</div>
+</footer>
+
+</body>
+</html>
